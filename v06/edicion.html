@@ -1,1 +1,62 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Edicion v3</title><link rel="stylesheet" href="styles.css"><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"></head><body><nav><div class="wrap bar"><a href="index.html"><img class="logo" src="img/logo.svg" alt="PAC"></a><ul><li><a href="index.html">Inicio</a></li><li><a href="oficio.html">Oficio</a></li><li><a href="programa.html">Programa</a></li><li><a href="presencial.html">Presencial</a></li><li><a class="on" href="edicion.html">Edicion</a></li></ul></div></nav><div class="wrap page two"><div><p class="kicker">Edicion</p><h1>Ocho plazas.</h1><p class="muted">No hay que venir de MICE ni vivir en Barcelona.</p></div><form action="https://formsubmit.co/pepe@intelidea.com" method="POST"><input type="hidden" name="_subject" value="Plaza PAC v3"><input type="hidden" name="_captcha" value="false"><div><label>Nombre</label><input name="nombre" required></div><div><label>Email</label><input type="email" name="email" required></div><div><label>Ciudad</label><input name="ciudad" required></div><button class="btn" type="submit">Enviar</button></form></div></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edición · v06</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="util"><div class="wrap"><a href="../">Todas las versiones</a><span>v06</span></div></div>
+<nav><div class="wrap bar">
+  <a href="index.html"><img class="logo" src="img/01.png" alt="PAC"></a>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="oficio.html">Oficio</a></li>
+    <li><a href="programa.html">Programa</a></li>
+    <li><a href="presencial.html">Presencial</a></li>
+    <li><a class="on" href="edicion.html">Edición</a></li>
+  </ul>
+</div></nav>
+<div class="wrap page two">
+  <div>
+    <p class="kicker">Edición</p>
+    <h1>Hablar con Andrea. Pedir una de las ocho plazas.</h1>
+    <p class="muted" style="margin:1rem 0">Cohorte cero. Cinco días en Barcelona + dos encuentros online. Precio de fundadores te lo dice ella. No hay dossier que descargar ni inscripción automática.</p>
+    <ul class="list">
+      <li><b>¿Tengo que venir de MICE?</b><span class="muted">No. Leisure, incentivo, congreso, evento, crucero o deporte.</span></li>
+      <li><b>¿Tengo que vivir en Barcelona?</b><span class="muted">No. El aula sí.</span></li>
+      <li><b>¿Hay fecha publicada?</b><span class="muted">La de aula se cierra en esa conversación.</span></li>
+    </ul>
+  </div>
+  <form action="https://formsubmit.co/pepe@intelidea.com" method="POST">
+    <input type="hidden" name="_subject" value="Plaza PAC v06">
+    <input type="hidden" name="_captcha" value="false">
+    <div><label>Nombre</label><input name="nombre" required></div>
+    <div><label>Email</label><input type="email" name="email" required></div>
+    <div><label>WhatsApp</label><input name="whatsapp" required></div>
+    <div><label>Ciudad</label><input name="ciudad" required></div>
+    <div><label>Tipo de grupo</label>
+      <select name="tipo">
+        <option>Vacacional / leisure</option>
+        <option>Incentivo</option>
+        <option>Congreso / reuniones</option>
+        <option>Evento</option>
+        <option>Crucero</option>
+        <option>Deporte</option>
+        <option>Varios / aún no lo sé</option>
+      </select>
+    </div>
+    <div><label>Vía</label>
+      <select name="via">
+        <option>Campo — guía / coordinadora / tour leader / on-site</option>
+        <option>Mesa — ops / incoming / jefa de equipo DMC</option>
+        <option>Aún no lo sé</option>
+      </select>
+    </div>
+    <div><label>Una línea para Andrea</label><textarea name="mensaje" rows="3"></textarea></div>
+    <button class="btn" type="submit">Pedir plaza</button>
+  </form>
+</div>
+</body></html>
