@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Por Aquí Conmigo · versiones</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{--teal:#1B6B73;--dk:#12343A;--muted:#5B6E6A;--line:#D2DDDA;--cream:#F7F3EB}
@@ -12,12 +11,15 @@
 body{font-family:"DM Sans",system-ui,sans-serif;background:var(--cream);color:var(--dk);line-height:1.5}
 .wrap{width:min(1100px,92vw);margin:0 auto;padding:2.2rem 0 3rem}
 h1{font-family:Fraunces,Georgia,serif;font-size:clamp(1.8rem,5vw,3rem);letter-spacing:-.03em}
-.kicker{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);font-weight:700;margin-bottom:.5rem}
-.lead{color:var(--muted);max-width:36rem;margin:.7rem 0 1.8rem}
+.kicker{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);font-weight:700}
+.lead{color:var(--muted);max-width:40rem;margin:.7rem 0 1.8rem}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem}
-a.card{background:#fff;border:1px solid var(--line);color:inherit;text-decoration:none;display:block;padding:1rem}
-a.card b{display:block;font-family:Fraunces,Georgia,serif;font-size:1.2rem;margin-bottom:.25rem}
-a.card span{color:var(--muted);font-size:.9rem}
+a.card{background:#fff;border:1px solid var(--line);color:inherit;text-decoration:none;display:block;overflow:hidden}
+a.card .shot{height:220px;border-bottom:1px solid var(--line);background:#E8EEEB;position:relative}
+a.card .shot img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+a.card .meta{padding:.85rem 1rem 1.05rem}
+a.card b{display:block;font-family:Fraunces,Georgia,serif;font-size:1.15rem}
+a.card span{color:var(--muted);font-size:.84rem}
 a.card.now{outline:2px solid var(--teal)}
 footer{margin-top:2rem;color:var(--muted);font-size:.84rem}
 </style>
@@ -26,10 +28,14 @@ footer{margin-top:2rem;color:var(--muted);font-size:.84rem}
 <div class="wrap">
   <p class="kicker">Por Aquí Conmigo</p>
   <h1>Elige versión</h1>
-  <p class="lead">La v5 no se pierde. La v6 es la actual: más ligera y con formulario que llega al correo.</p>
+  <p class="lead">Cada tarjeta es la home de esa edición. Entra: no se pisa la anterior.</p>
   <div class="grid">
-    <a class="card" href="v5/"><b>v5</b><span>Logo grande y adornos</span></a>
-    <a class="card now" href="v6/"><b>v6</b><span>Actual · form + ligera</span></a>
+    <a class="card" href="v1/"><div class="shot"><img src="thumbs/v1.jpg" alt="Home v1"></div><div class="meta"><b>v1</b><span>Primera landing</span></div></a>
+    <a class="card" href="v2/"><div class="shot"><img src="thumbs/v2.jpg" alt="Home v2"></div><div class="meta"><b>v2</b><span>Menos MICE, más oficio</span></div></a>
+    <a class="card" href="v3/"><div class="shot"><img src="thumbs/v3.jpg" alt="Home v3"></div><div class="meta"><b>v3</b><span>Web multipágina</span></div></a>
+    <a class="card" href="v4/"><div class="shot"><img src="thumbs/v4.jpg" alt="Home v4"></div><div class="meta"><b>v4</b><span>Andrea y Método Tierra</span></div></a>
+    <a class="card" href="v5/"><div class="shot"><img src="thumbs/v5.jpg" alt="Home v5"></div><div class="meta"><b>v5</b><span>Logo grande y adornos</span></div></a>
+    <a class="card now" href="v6/"><div class="shot"><img src="thumbs/v6.jpg" alt="Home v6"></div><div class="meta"><b>v6</b><span>Actual · form + ligera</span></div></a>
   </div>
   <footer>Repo1 · Cloudflare Worker</footer>
 </div>
