@@ -5,155 +5,147 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Por Aqui Conmigo · Escuela de quien mueve grupos</title>
 <meta name="description" content="Escuela de hospitalidad y coordinacion de grupos. Leisure, incentivo, congresos, cruceros y eventos. Presencial en Barcelona. Alumnas de toda Espana.">
-<link rel="icon" href="img/logo.svg">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
+<link rel="icon" href="logo-compacto.svg">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://images.unsplash.com">
+<style>
+:root{--teal:#1B6B73;--dk:#12343A;--cream:#FAF7F1;--paper:#F3EEE4;--ink:#1A2A2C;--muted:#5E706C;--line:#C9D8D5}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:"DM Sans",system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,92vw);margin:0 auto}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;letter-spacing:-.03em;color:var(--dk)}
+.kicker{font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--teal)}
+.btn{display:inline-flex;align-items:center;background:var(--teal);color:#fff;border:0;border-radius:10px;padding:.92rem 1.35rem;font:700 .92rem "DM Sans",sans-serif}
+.btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.55)}
+.util{background:var(--dk);color:#b7d4d4;font-size:.72rem;letter-spacing:.08em;padding:.35rem 0}
+.util .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+nav{position:sticky;top:0;z-index:50;background:rgba(250,247,241,.94);border-bottom:1px solid var(--line)}
+nav .bar{display:flex;align-items:center;justify-content:space-between;height:78px;gap:1rem}
+.logo{height:52px}.logo-lg{width:min(520px,92vw);margin:1.2rem 0 1.4rem}
+nav ul{display:flex;gap:1.2rem;list-style:none;font-size:.9rem;font-weight:500}
+.hero{position:relative;min-height:88vh;color:#fff;display:grid;align-items:end}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,52,58,.25),rgba(18,52,58,.82) 72%)}
+.hero .copy{position:relative;width:min(1180px,92vw);margin:0 auto;padding:0 0 4.6rem}
+.hero h1{color:#fff;font-size:clamp(2.3rem,5.6vw,4.6rem);line-height:1.02;max-width:16ch}
+.hero .lead{max-width:42ch;font-size:1.12rem;margin:.3rem 0 1.5rem;color:#e7f3f2}
+.hero .row,.meta{display:flex;flex-wrap:wrap;gap:.75rem}
+.meta{margin-top:1.4rem;font-size:.88rem;color:#d5eceb}
+section{padding:5.1rem 0}.band{background:var(--paper)}.band.ink{background:var(--dk);color:#d5eceb}.band.ink h2,.band.ink h3{color:#fff}
+.sec-head{max-width:40rem;margin-bottom:2rem}
+.sec-head h2{font-size:clamp(1.7rem,3.2vw,2.55rem);margin:.45rem 0 .7rem}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1.15rem}
+.door,.mod,.prob,.tile,.faq{background:#fff;border:1px solid var(--line);border-radius:16px;padding:1.3rem 1.25rem 1.45rem}
+.muted,.door p,.mod p,.tile p,.faq p{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.2rem}
+.chip{border:1px solid var(--line);background:#fff;border-radius:99px;padding:.36rem .8rem;font-size:.82rem}
+.mod b,.prob b,.tile b{display:block;color:var(--teal);font-size:.74rem;letter-spacing:.12em;margin-bottom:.35rem}
+.prob ul{margin:.55rem 0 0 1.05rem}.prob li{margin:.28rem 0;color:var(--muted)}
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:2.2rem;align-items:center}
+.split img{border-radius:18px;width:100%;height:420px;object-fit:cover}
+.week{display:grid;grid-template-columns:repeat(5,1fr);gap:.7rem}
+form{display:grid;gap:.65rem;background:#fff;border:1px solid var(--line);border-radius:18px;padding:1.35rem}
+label{font-size:.72rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+input,textarea,select{width:100%;border:1px solid var(--line);border-radius:10px;padding:.78rem .85rem;font:1rem "DM Sans",sans-serif;background:var(--cream)}
+footer{background:var(--dk);color:#b7d4d4;padding:3rem 0 2rem;font-size:.88rem}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:1.4rem}
+footer strong{color:#fff}footer ul{list-style:none;margin-top:.6rem}
+footer img{height:44px;width:auto;margin-bottom:.7rem;background:#faf7f1;border-radius:8px;padding:.25rem .4rem}
+.footbar{border-top:1px solid #2a4a4e;margin-top:1.8rem;padding-top:1rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.78rem}
+@media(max-width:900px){nav ul{display:none}.grid3,.grid2,.split,.week,footer .cols{grid-template-columns:1fr}.split img{height:240px}.logo{height:42px}}
+</style></head>
 <body>
-<nav>
-  <div class="wrap bar">
-    <a href="index.html"><img class="logo" src="img/logo.svg" alt="Por Aqui Conmigo"></a>
-    <ul>
-      <li><a href="#escuela">La escuela</a></li>
-      <li><a href="#publico">Para quien</a></li>
-      <li><a href="#problemas">Oficio</a></li>
-      <li><a href="#programa">Programa</a></li>
-      <li><a href="#campus">Presencial</a></li>
-    </ul>
-    <a class="btn" href="#plaza">Reservar plaza</a>
-  </div>
-</nav>
-<div class="wrap hero" id="top">
-  <img class="mark" src="img/logo.svg" alt="Por Aqui Conmigo">
-  <p class="kicker">Hospitality and Group Events Coordination School · v2</p>
-  <h1>La escuela de quien mueve grupos</h1>
-  <p class="lead">Formamos a guias y coordinadoras para leisure, incentivo, congresos, cruceros y todo lo que se mueve en fila. No es un master. No es solo MICE. Es el oficio de tierra.</p>
-  <a class="btn" href="#plaza">Quiero plaza</a>
-  <a class="btn line" href="#problemas">Ver el oficio</a>
+<div class="util"><div class="wrap"><span><a href="../" style="color:#b7d4d4">TODAS LAS VERSIONES</a> · ESCUELA</span><span>Presencial en Barcelona · alumnas de toda Espana · v2</span></div></div>
+<nav><div class="wrap bar">
+<a href="#top"><img class="logo" src="logo-compacto.svg" alt="Por Aqui Conmigo"></a>
+<ul>
+<li><a href="#escuela">La escuela</a></li><li><a href="#publico">Para quien</a></li><li><a href="#problemas">Oficio</a></li>
+<li><a href="#programa">Programa</a></li><li><a href="#semana">La semana</a></li><li><a href="#campus">Presencial</a></li><li><a href="#faq">FAQ</a></li>
+</ul>
+<a class="btn" href="#plaza">Reservar plaza</a>
+</div></nav>
+<header class="hero" id="top">
+<img class="bg" alt="Grupo en movimiento" src="https://images.unsplash.com/photo-1469854523086-cc02fe5b69e5?auto=format&fit=crop&w=2000&q=80">
+<div class="veil"></div>
+<div class="copy">
+<img class="logo-lg" src="logo-principal.svg" alt="Por Aqui Conmigo">
+<h1>La escuela de quien mueve grupos</h1>
+<p class="lead">Formamos a guias y coordinadoras para leisure, incentivo, congresos, cruceros y todo lo que se mueve en fila. No es un master. No es solo MICE. Es el oficio de tierra.</p>
+<div class="row"><a class="btn" href="#plaza">Reservar plaza</a><a class="btn ghost" href="#problemas">Como se resuelve el dia feo</a></div>
+<div class="meta"><span>Presencial en Barcelona</span><span>Alumnas de toda Espana</span><span>Parte online</span><span>8 plazas</span></div>
+</div></header>
+<section id="escuela" class="band"><div class="wrap split"><div>
+<p class="kicker">La escuela</p><h2>No un campus. Un oficio con nombre.</h2>
+<p class="muted" style="margin:1rem 0">Por Aqui Conmigo es la escuela de quien ya esta en la calle — o va a estarlo — y necesita criterio cuando la reserva se convierte en personas.</p>
+<p class="muted">La marca vive fuera del aula: en el walkie, en el briefing, en el handover de las 23:40.</p>
+<div class="chips"><span class="chip">Run de calle</span><span class="chip">Sheet de mesa</span><span class="chip">Campo y mesa</span></div>
+</div><img alt="Marca" src="logo-principal.svg" style="object-fit:contain;background:#faf7f1;height:auto;padding:2rem"></div></section>
+<section id="publico"><div class="wrap"><div class="sec-head"><p class="kicker">Para quien</p><h2>Si mueves personas, esto es lo tuyo.</h2><p class="muted">No hace falta venir de MICE.</p></div>
+<div class="grid3">
+<article class="door"><p class="kicker">Acompanias</p><h3>Guias y coordinadoras</h3><p>Tour leader, on-site, hospitality desk. El grupo te mira a ti cuando el plan se tuerce.</p></article>
+<article class="door"><p class="kicker">Preparas</p><h3>Ops, incoming, agencia</h3><p>Quien escribe el briefing y vive el WhatsApp a las 6:10.</p></article>
+<article class="door"><p class="kicker">El grupo</p><h3>Todos los que se mueven</h3><p>Vacacional, incentivo, congreso, evento, crucero, deporte.</p></article>
+</div></div></section>
+<section id="problemas" class="band"><div class="wrap"><div class="sec-head"><p class="kicker">El oficio</p><h2>Problemas reales. Dos maneras de resolverlos.</h2></div>
+<div class="grid2">
+<article class="prob"><b>Antes de que salga el grupo</b><h3>Prevencion, formacion, checklist</h3><ul><li>Expediente que no depende de la memoria.</li><li>Timing con margen de verdad.</li><li>Checklist de salida: rooming, alergias, plan B.</li><li>Briefing que el hotel y el conductor pueden ejecutar.</li></ul></article>
+<article class="prob"><b>Cuando ya esta en la calle</b><h3>Metodo en tiempo real</h3><ul><li>Retraso, cierre, lluvia, baja.</li><li>Que no dices al grupo.</li><li>Proveedor ausente: plan B en diez minutos.</li><li>Handover a las 23:40.</li></ul></article>
+</div></div></section>
+<section id="programa"><div class="wrap"><div class="sec-head"><p class="kicker">Programa</p><h2>Seis titulos. El resto, en el aula.</h2></div>
+<div class="grid3">
+<article class="mod"><b>01</b><h3>Expediente</h3><p>Que va en el papel y que no.</p></article>
+<article class="mod"><b>02</b><h3>Timing real</h3><p>Minutos entre traslado, check-in y primer slot.</p></article>
+<article class="mod"><b>03</b><h3>Hospitalidad de grupo</h3><p>Energia, VIP, alergias, queja en publico.</p></article>
+<article class="mod"><b>04</b><h3>Cadena de mando</h3><p>Cliente, proveedor, mesa.</p></article>
+<article class="mod"><b>05</b><h3>Documentos</h3><p>Manifiesto, rooming, runsheet, handover.</p></article>
+<article class="mod"><b>06</b><h3>El dia feo</h3><p>Simulacro cronometrado.</p></article>
+</div></div></section>
+<section id="semana" class="band ink"><div class="wrap"><div class="sec-head"><p class="kicker" style="color:#8ec4c7">Una semana tipo</p><h2>Asi se siente por dentro.</h2></div>
+<div class="week">
+<article class="tile"><b>Lun</b><h3>Mesa</h3><p>Leer el expediente.</p></article>
+<article class="tile"><b>Mar</b><h3>Calle</h3><p>Timing real. Reloj en mano.</p></article>
+<article class="tile"><b>Mie</b><h3>Grupo</h3><p>Hospitalidad y queja.</p></article>
+<article class="tile"><b>Jue</b><h3>Feo</h3><p>Simulacro. Vuelo tarde.</p></article>
+<article class="tile"><b>Vie</b><h3>Cierre</h3><p>Handover y debrief.</p></article>
+</div></div></section>
+<section id="campus"><div class="wrap split">
+<img alt="Barcelona" src="https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=1400&q=80">
+<div><p class="kicker">Presencial</p><h2>El aula esta en Barcelona. El oficio, en toda Espana.</h2>
+<p class="muted" style="margin:1rem 0">El contenido vale igual si trabajas en Madrid, Valencia, Sevilla, Malaga, Canarias, Baleares o el norte.</p>
+<div class="chips"><span class="chip">Madrid</span><span class="chip">Valencia</span><span class="chip">Sevilla</span><span class="chip">Palma</span><span class="chip">Bilbao</span></div>
+</div></div></section>
+<section id="imparte" class="band"><div class="wrap split"><div>
+<p class="kicker">Quien imparte</p><h2>Viene de mover grupos. Ensena lo que usa el martes.</h2>
+<p class="muted" style="margin:1rem 0">Casos reales. Grupos reducidos. Checklists que te llevas.</p>
+<a class="btn" href="#plaza">Escribir y reservar</a>
+</div><img alt="Quien imparte" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80">
+</div></section>
+<section id="faq"><div class="wrap"><div class="sec-head"><p class="kicker">Preguntas</p><h2>Antes de escribir.</h2></div>
+<div class="grid2">
+<article class="faq"><h3>Tengo que venir de MICE?</h3><p>No. Leisure, incentivo, congreso, evento, crucero o deporte.</p></article>
+<article class="faq"><h3>Tengo que vivir en Barcelona?</h3><p>No. El presencial es ahi. El programa no.</p></article>
+<article class="faq"><h3>Es un master?</h3><p>No. Simulacro, checklist y criterio bajo presion.</p></article>
+<article class="faq"><h3>Cuantas sois?</h3><p>Ocho plazas. Se cierra hablando.</p></article>
+</div></div></section>
+<section id="plaza" class="band"><div class="wrap grid2" style="align-items:start"><div>
+<p class="kicker">Proxima edicion</p><h2>Ocho plazas. Se cierra hablando.</h2>
+<p class="muted" style="margin:1rem 0">Cohorte cero. Precio de fundadores: te lo digo al escribir.</p>
+<img src="logo-compacto.svg" alt="" style="height:48px;width:auto;margin-top:1rem">
 </div>
-<div class="wrap strip">
-  <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=1400&q=70" alt="Barcelona">
-  <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=900&q=70" alt="Grupo en ruta">
-  <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=70" alt="Hotel">
-</div>
-<div class="wrap page" id="escuela">
-  <p class="kicker">La escuela</p>
-  <h2>No un campus. Un oficio con nombre.</h2>
-  <p class="muted" style="max-width:40rem;margin:1rem 0 0">Ocho plazas. Casos reales. Checklists que te llevas. Andrea al frente. El aula esta en Barcelona; quien se forma puede venir de cualquier ciudad de Espana.</p>
-</div>
-<div class="wrap page" id="publico" style="padding-top:0">
-  <p class="kicker">Para quien</p>
-  <h2>Si mueves personas, esto es lo tuyo. Da igual la etiqueta de la reserva.</h2>
-  <div class="doors" style="margin-top:1.4rem">
-    <a href="#problemas"><b>Acompanias</b><p class="muted">Guia o coordinadora de campo. El grupo te mira a ti.</p></a>
-    <a href="#problemas"><b>Preparas</b><p class="muted">Ops, incoming, DMC. Quien escribe el expediente.</p></a>
-    <a href="#problemas"><b>El grupo</b><p class="muted">Leisure, incentivo, congreso, evento, crucero, deporte.</p></a>
-  </div>
-</div>
-<div class="wrap page" id="problemas">
-  <p class="kicker">El oficio</p>
-  <h2>Problemas reales. Dos maneras de resolverlos.</h2>
-  <div class="cols" style="margin-top:1.6rem">
-    <div>
-      <h3>Prevencion, formacion, checklist</h3>
-      <ul class="list">
-        <li><b>Expediente</b><span class="muted">Que no dependa de la memoria.</span></li>
-        <li><b>Timing real</b><span class="muted">Margen de verdad, no el del mapa.</span></li>
-        <li><b>Checklist de salida</b><span class="muted">Rooming, alergias, movilidad, proveedor, plan B.</span></li>
-        <li><b>Briefing ejecutable</b><span class="muted">El conductor y el hotel pueden usarlo.</span></li>
-        <li><b>Cadena de mando</b><span class="muted">Quien llama a quien si falla X.</span></li>
-      </ul>
-    </div>
-    <div>
-      <h3>Cuando ya esta en la calle</h3>
-      <ul class="list">
-        <li><b>El dia feo</b><span class="muted">Retraso, cierre, lluvia, baja de ultima hora.</span></li>
-        <li><b>Que no dices al grupo</b><span class="muted">A quien llamas primero.</span></li>
-        <li><b>Queja en publico</b><span class="muted">Sin perder al resto.</span></li>
-        <li><b>Proveedor ausente</b><span class="muted">Plan B en diez minutos.</span></li>
-        <li><b>Handover a las 23:40</b><span class="muted">Sin dejar el lio al siguiente.</span></li>
-      </ul>
-    </div>
-  </div>
-</div>
-<div class="wrap page" id="programa">
-  <p class="kicker">Programa</p>
-  <h2>Seis titulos. El resto, en el aula.</h2>
-  <p class="muted" style="max-width:36rem;margin:1rem 0 1.4rem">El simulacro se hace con expedientes de varios tipos de grupo, no solo de congreso.</p>
-  <ol class="list">
-    <li><b>01 · Expediente</b><span class="muted">Que va en el papel y que no.</span></li>
-    <li><b>02 · Timing real</b><span class="muted">Minutos entre traslado, check-in y primer slot.</span></li>
-    <li><b>03 · Hospitalidad de grupo</b><span class="muted">Energia, VIP, alergias, accesibilidad, queja en publico.</span></li>
-    <li><b>04 · Cadena de mando</b><span class="muted">Cliente, proveedor, mesa. Radio silencio cero.</span></li>
-    <li><b>05 · Documentos</b><span class="muted">Manifiesto, rooming, runsheet, briefing al conductor, handover.</span></li>
-    <li><b>06 · El dia feo</b><span class="muted">Simulacro cronometrado. Se aprueba resolviendo.</span></li>
-  </ol>
-</div>
-<div class="wrap page" id="semana">
-  <p class="kicker">Una semana tipo</p>
-  <h2>Asi se siente por dentro. No es un PDF de 12 paginas.</h2>
-  <div class="week" style="margin-top:1.4rem">
-    <div><span class="kicker">LUN</span><b>Mesa</b><p class="muted">Leer el expediente. Marcar agujeros.</p></div>
-    <div><span class="kicker">MAR</span><b>Calle</b><p class="muted">Timing real. Reloj en mano.</p></div>
-    <div><span class="kicker">MIE</span><b>Grupo</b><p class="muted">Hospitalidad y queja.</p></div>
-    <div><span class="kicker">JUE</span><b>Feo</b><p class="muted">Simulacro. Vuelo tarde.</p></div>
-    <div><span class="kicker">VIE</span><b>Cierre</b><p class="muted">Handover y debrief.</p></div>
-  </div>
-</div>
-<div class="wrap page two" id="campus">
-  <div>
-    <p class="kicker">Presencial</p>
-    <h2>El aula esta en Barcelona. El oficio, en toda Espana.</h2>
-    <p class="muted" style="margin:1rem 0">Ahi hay volumen y calle para entrenar. El contenido vale igual si trabajas en Madrid, Valencia, Sevilla, Malaga, Canarias, Baleares o el norte.</p>
-    <div class="cities">
-      <span>Madrid</span><span>Valencia</span><span>Sevilla</span><span>Malaga</span>
-      <span>Palma</span><span>Las Palmas</span><span>Bilbao</span><span>A Coruna</span>
-    </div>
-  </div>
-  <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b955?auto=format&fit=crop&w=1000&q=70" alt="Aula">
-</div>
-<div class="wrap page" id="faq">
-  <p class="kicker">Preguntas que ya nos hacen</p>
-  <h2>Antes de escribir.</h2>
-  <ul class="list">
-    <li><b>Tengo que venir de MICE?</b><span class="muted">No. Leisure, incentivo, congreso, evento, crucero o deporte.</span></li>
-    <li><b>Tengo que vivir en Barcelona?</b><span class="muted">No. El presencial es ahi. El programa no.</span></li>
-    <li><b>Es un master?</b><span class="muted">No hay ECTS ni campus. Hay simulacro, checklist y criterio bajo presion.</span></li>
-  </ul>
-</div>
-<div class="wrap page two" id="plaza">
-  <div>
-    <p class="kicker">Proxima edicion</p>
-    <h2>Ocho plazas. Se cierra hablando.</h2>
-    <p class="muted" style="margin:1rem 0">Cohorte cero. Precio de fundadores: te lo digo al escribir. Dinos desde que ciudad trabajas y que grupos mueves.</p>
-  </div>
-  <form action="https://formsubmit.co/pepe@intelidea.com" method="POST">
-    <input type="hidden" name="_subject" value="Plaza Por Aqui Conmigo v2">
-    <input type="hidden" name="_captcha" value="false">
-    <div><label>Nombre</label><input name="nombre" required></div>
-    <div><label>Email</label><input type="email" name="email" required></div>
-    <div><label>WhatsApp</label><input name="whatsapp" placeholder="+34"></div>
-    <div><label>Ciudad</label><input name="ciudad" required></div>
-    <div><label>Tipo de grupo</label>
-      <select name="tipo">
-        <option>Vacacional / leisure</option>
-        <option>Incentivo</option>
-        <option>Congreso / reuniones</option>
-        <option>Evento</option>
-        <option>Crucero</option>
-        <option>Deporte</option>
-        <option>Varios / aun no lo se</option>
-      </select>
-    </div>
-    <button class="btn" type="submit">Reservar plaza</button>
-  </form>
-</div>
-<footer>
-  <div class="wrap f">
-    <div>Por Aqui Conmigo · v2<br>La escuela de quien mueve grupos</div>
-    <div><a href="../">Todas las versiones</a></div>
-    <div>hola@poraquiconmigo.es</div>
-  </div>
-</footer>
-</body>
-</html>
+<form action="https://formsubmit.co/pepe@intelidea.com" method="POST">
+<input type="hidden" name="_subject" value="Plaza Por Aqui Conmigo v2">
+<input type="hidden" name="_captcha" value="false">
+<div><label>Nombre</label><input name="nombre" required></div>
+<div><label>Email</label><input type="email" name="email" required></div>
+<div><label>WhatsApp</label><input name="whatsapp" required></div>
+<div><label>Ciudad</label><input name="ciudad" required></div>
+<div><label>Tipo de grupo</label><select name="tipo"><option>Vacacional / leisure</option><option>Incentivo</option><option>Congreso / reuniones</option><option>Evento</option><option>Crucero</option><option>Deporte</option><option>Varios / aun no lo se</option></select></div>
+<div><label>Via</label><select name="via"><option>Campo — guia / coordinadora</option><option>Mesa — ops / incoming / agencia</option></select></div>
+<div><label>Una linea</label><textarea name="mensaje" rows="3"></textarea></div>
+<button class="btn" type="submit">Reservar plaza</button>
+</form></div></section>
+<footer><div class="wrap"><div class="cols"><div><img src="logo-compacto.svg" alt="Por Aqui Conmigo"><strong>La escuela de quien mueve grupos</strong></div><div><strong>Escuela</strong><br><a href="#escuela">La marca</a></div><div><strong>Oficio</strong><br><a href="#problemas">Prevencion y calle</a></div><div><strong>Edicion</strong><br><a href="#plaza">Reservar plaza</a></div></div>
+<div class="footbar"><span>poraquiconmigo-v2</span><span><a href="../">Indice de versiones</a></span></div></div></footer>
+</body></html>
