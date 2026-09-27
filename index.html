@@ -32,10 +32,14 @@ footer{margin-top:2rem;color:var(--muted);font-size:.84rem}
   <h1>Elige versión</h1>
   <p class="lead">El sello de cada tarjeta se lee de la carpeta del enlace. Línea 20 (v20, v21, v22) irá en otro índice cuando exista la app.</p>
 
-  <h2>Finalistas · v14 y v13</h2>
+  <h2>Finalistas · v18, v17, v16, v19</h2>
   <div class="grid">
-    <a class="card now" href="v14/"><div class="shot"><img alt=""></div><div class="meta"><b></b><span>Finalista</span></div></a>
-    <a class="card now" href="v13/"><div class="shot"><img alt=""></div><div class="meta"><b></b><span>Finalista · una página</span></div></a>
+    <a class="card now" href="v18/"><div class="shot"><img alt=""></div><div class="meta"><b></b><span>Finalista</span></div></a>
+    <a class="card now" href="v17/"><div class="shot"><img alt=""></div><div class="meta"><b></b><span>Finalista</span></div></a>
+    <a class="card now" href="v16/"><div class="shot"><img alt=""></div><div class="meta"><b></b><span>Finalista</span></div></a>
+    <a class="card now" href="v19/"><div class="shot"><img alt=""></div><div class="meta"><b></b><span>Finalista</span></div></a>
+    <a class="card" href="v14/"><div class="shot"><img alt=""></div><div class="meta"><b></b><span>Finalista</span></div></a>
+    <a class="card" href="v13/"><div class="shot"><img alt=""></div><div class="meta"><b></b><span>Finalista · una página</span></div></a>
   </div>
 
   <h2>Candidatas · v12, v11 y v10</h2>
@@ -65,7 +69,16 @@ document.querySelectorAll('a.card[href]').forEach(function(a){
   var img=shot.querySelector('img');
   img.alt='Home '+folder;
   img.src='thumbs/'+folder+'.jpg';
-  img.onerror=function(){ img.onerror=null; img.src='thumbs/'+folder+'.svg'; };
+  img.onerror=function(){
+    if(!img.dataset.fallback){
+      img.dataset.fallback='svg';
+      img.src='thumbs/'+folder+'.svg';
+      return;
+    }
+    img.onerror=null;
+    img.removeAttribute('src');
+    img.style.background='#1B6B73';
+  };
 });
 </script>
 </body>
